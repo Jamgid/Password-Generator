@@ -1,9 +1,40 @@
+function confirmValues(){    
+    function confirmLower(){
+
+        confirm("Do you want lowercase letters in your password");{  
+                
+        }
+    }    
+    function confirmUpper(){
+
+        confirm("Do you want lowercase letters in your password");{
+            
+        }  
+    }
+    function confirmSymbol(){
+
+        confirm("Do you want lowercase letters in your password");{
+            
+        }
+    }      
+    function confirmNumber(){
+
+        confirm("Do you want lowercase letters in your password");{
+            
+        }  
+    }        
+  
+}
+
+confirmValues();
+
+//set password values
+let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
+
 // Write password to the #password input
 function generate() {
   //set password length  
   let complexity = document.getElementById("slider").value;
-  //set password values
-  let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
   
   let password = "";  
   //loop to pick specified amount of characters
@@ -28,3 +59,4 @@ document.getElementById("slider").oninput = function(){
         document.getElementById("length").innerHTML = "Length: 8"
     }
 }
+alert(password);
